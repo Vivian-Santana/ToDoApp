@@ -7,16 +7,16 @@ public class Project { //ESSA CLASSE REPRESENTA O PROJETO DO APP
 	private int id;
 	private String name;
 	private String description;
-	private Date createAt;
-	private Date updateat;
+	private Date createdAt;
+	private Date updatedAt;
 	
-	private Project(int id, String name, String description, Date createAt, Date updateat) { //PARAMETROS
+	private Project(int id, String name, String description, Date createdAt, Date updatedAt) { //PARAMETROS
 		super();                            //ATRIBUTOS
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.createAt = createAt;
-		this.updateat = updateat;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
 	}
 
 	public int getId() {
@@ -43,27 +43,26 @@ public class Project { //ESSA CLASSE REPRESENTA O PROJETO DO APP
 		this.description = description;
 	}
 
-	public Date getCreateAt() {
-		return createAt;
+	public Date getCreatedAt() {
+		return createdAt;
 	}
 
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
+	public void setCreatedAt(Date createdAt) {
+		this.createdAt = updatedAt;
 	}
 
-	public Date getUpdateat() {
-		return updateat;
+	public Date getUpdatedAt() {
+		return updatedAt;
 	}
 
-	public void setUpdateat(Date updateat) {
-		this.updateat = updateat;
+	public void setUpdatedAt(Date updatedAt) {
+		this.updatedAt = updatedAt;
 	}
 
 	@Override
 	public String toString() {
-		return "Project [id=" + id + ", name=" + name + ", description=" + description + ", createAt=" + createAt
-				+ ", updateat=" + updateat + "]";
+		return "Project [id=" + id + ", name=" + name + ", description=" + description + ", createdAt=" + updatedAt
+				+ ", updatedAt=" + updatedAt + "]";
 	}
-	
 	
 }
