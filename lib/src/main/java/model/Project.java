@@ -10,7 +10,7 @@ public class Project { //ESSA CLASSE REPRESENTA O PROJETO DO APP
 	private Date createdAt;
 	private Date updatedAt;
 	
-	private Project(int id, String name, String description, Date createdAt, Date updatedAt) { //PARAMETROS
+	public Project() { //PARAMETROS (int id, String name, String description, Date createdAt, Date updatedAt)
 		super();                            //ATRIBUTOS
 		this.id = id;
 		this.name = name;
